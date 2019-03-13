@@ -7,6 +7,7 @@ import logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 from flask_mail import Mail
+from flask_bootstrap import Bootstrap
 
 
 app = Flask(__name__)
@@ -17,6 +18,7 @@ login = LoginManager(app)
 # 未登录情况下访问其他页面默认返回login页面
 login.login_view = 'login'
 mail = Mail(app)
+bootstrap = Bootstrap(app)
 
 from app import routes, models, errors
 
