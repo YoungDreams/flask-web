@@ -31,7 +31,7 @@ class RegistrationForm(FlaskForm):
 
 class ResetPasswordRequestForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email()])
-    submit = SubmitField('Request Password Rest')
+    submit = SubmitField('Request Password Rest', render_kw={'class': 'btn btn-primary'})
 
 
 class ResetPasswordForm(FlaskForm):

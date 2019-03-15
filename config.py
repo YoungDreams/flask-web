@@ -20,3 +20,4 @@ class Config(object):
     POSTS_PER_PAGE = 25
     ENV = 'development'
     LANGUAGES = ['en', 'zh_cn']
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
