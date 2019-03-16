@@ -4,7 +4,7 @@ __author__ = 'taylorlee'
 from threading import Thread
 from flask import current_app
 from flask_mail import Message
-from app import app, mail
+from app import mail
 
 
 def send_async_email(app, msg):
