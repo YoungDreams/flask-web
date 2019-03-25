@@ -106,8 +106,8 @@ venv.bak/
 venv
 app.db
 microblog.log*
-logs/*
-.idea/*
+/logs/*
+.idea/
 
 # Translations
 *.mo
